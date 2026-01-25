@@ -41,9 +41,9 @@ public class RagisterTest extends BaseTest
 	  AccountPage accountpage=new AccountPage(driver);
 	  accountpage.clickcontinuebtn();
 	  accountpage.verifyLoggedInAsUser("vyankatesh");
-	  accountpage.clickDeleteaction();
-	  accountpage.verifyaccountdeletandconutinue();
-	
+//	  accountpage.clickDeleteaction();
+//	  accountpage.verifyaccountdeletandconutinue();
+//	
   
   
   

@@ -57,17 +57,17 @@ public class AccountPage
 		{
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		    // ✅ Wait for "Account Deleted!" message
+		    //  Wait for "Account Deleted!" message
 		    WebElement deletedMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(accdeletedmsg));
 		    String actualText = deletedMsg.getText().trim();
 		    System.out.println("Account deleted message: " + actualText);
 
-		    Assert.assertEquals(actualText, "Account Deleted!", "❌ 'Account Deleted!' message not visible or text mismatch!");
+		    Assert.assertEquals(actualText, "Account Deleted!", " 'Account Deleted!' message not visible or text mismatch!");
 
-		    // ✅ Click Continue after deletion
+		    //  Click Continue after deletion
 		    WebElement continueBtn = wait.until(ExpectedConditions.elementToBeClickable(continueAfterDeleteBtn));
 		    continueBtn.click();
 
-		    System.out.println("✅ Account deleted successfully and continued.");
+		    System.out.println(" Account deleted successfully and continued.");
 		}
 }
