@@ -81,16 +81,12 @@ public class AccountCreationPage
 		new Select(driver.findElement(daysdrpdown)).selectByValue(day);
 		new Select(driver.findElement(monthsdrpdown)).selectByValue(month);
 		
-		
-	
-		
-		
+		//for printing the year
 //		new Select(driver.findElement(yearsdrpdown)).getOptions()
 //		    .forEach(option -> System.out.println(option.getText()));
 		
 		new Select(driver.findElement(yearsdrpdown)).selectByVisibleText(year);;
-//		
-		 // Wait for dropdowns to appear before selecting
+
 	    
 		
 	}

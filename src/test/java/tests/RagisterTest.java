@@ -31,9 +31,7 @@ public class RagisterTest extends BaseTest
 	  actpage.fillaccountdetails("Mr", "password123","10","1","2021");
 	  actpage.selectcheckbox();
 	  
-//	  JavascriptExecutor js=(JavascriptExecutor)driver;
-//	  js.executeScript("driver.ScrollBy(0,400)");
-	  
+
 	  actpage.filladdressdetils("kartik","panchal", "repsoftsolution", "karvenagr","near pizzahut","India", "Maharashtra","Pune", "411052", "8600756588");
 	  actpage.clickCreateAccountbtn();
 	  actpage.verifyaccountcreatemsg();
