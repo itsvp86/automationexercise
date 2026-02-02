@@ -1,14 +1,11 @@
 package tests;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
-
 import Pages.AccountCreationPage;
 import Pages.AccountPage;
 import Pages.HomePage;
 import Pages.SignupLoginPage;
 import base.BaseTest;
-
 public class RagisterTest extends BaseTest
 {
   @Test
@@ -41,7 +38,6 @@ public class RagisterTest extends BaseTest
 	  accountpage.verifyLoggedInAsUser("vyankatesh");
 //	  accountpage.clickDeleteaction();
 //	  accountpage.verifyaccountdeletandconutinue();
-//	
   
   
   
