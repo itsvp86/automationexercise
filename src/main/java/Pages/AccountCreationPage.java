@@ -47,7 +47,6 @@ public class AccountCreationPage
 	 private By createAccountBtn = By.xpath("//button[text()='Create Account']");
 	    private By accountCreatedMsg = By.xpath("//b[text()='Account Created!']");
 
-	
 	//constructor
 	public AccountCreationPage(WebDriver driver)
 	{
@@ -60,7 +59,6 @@ public class AccountCreationPage
 	{
 		String acttext=driver.findElement(enteraccountInfoText).getText();
 		Assert.assertEquals(acttext,"ENTER ACCOUNT INFORMATION","enter account info text is not visible");
-		
 		
 	}
 	
@@ -88,7 +86,7 @@ public class AccountCreationPage
 		new Select(driver.findElement(yearsdrpdown)).selectByVisibleText(year);;
 
 	    
-		
+
 	}
 	
 	public void selectcheckbox()
